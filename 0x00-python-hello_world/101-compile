@@ -1,2 +1,4 @@
 #!/usr/bin/bash
-python3 -m "$PYFILE"
+python3 -m compileall "$PYFILE"
+compiled="${PYFILE}c"
+mv "__pycache__/${PYFILE}.*.pyc" "$compiled"
