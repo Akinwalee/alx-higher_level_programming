@@ -14,4 +14,3 @@ for name in names_:
 
 if __name__ == "__main__":
     pass
-
