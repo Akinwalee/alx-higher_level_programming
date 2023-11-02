@@ -11,3 +11,6 @@ else:
         if i == 0:
             continue
         print("{}: {}".format(i, argv[i]))
+
+if __name__ == "__main__":
+    pass
