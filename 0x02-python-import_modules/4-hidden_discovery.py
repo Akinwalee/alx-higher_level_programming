@@ -4,9 +4,9 @@ import hidden_4
 names = dir(hidden_4)
 names_ = []
 for name in names:
-    if name.startsWith("__"):
+    if name.startswith("__"):
         continue
-    names_.append(i)
+    names_.append(name)
 names_sorted = names_.sort()
 for name in names_:
     print(name)
