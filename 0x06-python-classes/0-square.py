@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Declaring a Square class"""
+
+
 class Square:
     """This is an empty class that defines square objects.
     The first task in a project of 9 tasks on object oriented programming.
