@@ -5,7 +5,9 @@
 
 class Square:
     """This is a square class with a size private attribute
-    It implements a type check to enure that the ize attribute is a valid integer"""
+    It implements a type check to enure that the ize attribute
+    is a valid integer
+    """
 
     def __init__(self, size=0):
         try:
