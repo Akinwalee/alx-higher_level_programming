@@ -57,6 +57,6 @@ class Rectangle:
                 for j in range(self.__width):
                     output += "#"
                 output += '\n'
-            return (output)
+            return (output.rstrip())
         else:
             return (output)
