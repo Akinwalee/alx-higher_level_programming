@@ -1,5 +1,11 @@
 #!/usr/bin/python3
-"""This is a class that demostrates OOP in python"""
+
+"""
+This is a class that demostrates OOP in python
+
+It calculates the area, perimeter, and prints the #
+representation of the rectangle
+"""
 
 
 class Rectangle:
