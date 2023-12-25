@@ -50,9 +50,13 @@ class Rectangle:
             return (0)
 
     def __str__(self):
+        """Return a # representation of rectangle"""
+        output = ""
         if self.__width != 0 and self.__height != 0:
-            for in range(self.__height):
+            for i in range(self.__height):
                 for j in range(self.__width):
-                    print("#", end="" if j < len(self.__width) else "\n")
+                    output += "#"
+                output += '\n'
+            return (output)
         else:
-            return ("")
+            return (output)
