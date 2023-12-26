@@ -3,12 +3,15 @@
 
 
 def matrix_divided(matrix, div):
+    """This is a function that divides a matrix by div
+    and returns an new matrix rounded to 2 decimal places
+    """
     for row in matrix:
         if not isinstance(row, list) or \
                 not all(isinstance(x, (int, float)) for x in row):
             raise TypeError(
-                    "matrix must be a matrix \
-                    (list of lists) of integers/floats")
+                    "matrix must be a matrix (list of lists) of integers/floats"
+                    )
     mat_len = len(matrix[0])
     for x in matrix:
         if len(x) != mat_len:
