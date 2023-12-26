@@ -1,0 +1,48 @@
+"""Tests for text_indentation"""
+
+
+Import the module:
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Then test as follows:
+
+>>> text_indentation()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+>>> text_indentation("")
+
+>>> text_indentation(2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/vagrant/alx-higher_level_programming/0x07-python-test_driven_development/5-text_indentation.py", line 9, in text_indentation
+    raise TypeError("text must be a string")
+TypeError: text must be a string
+
+>>> text_indentation(" hello:My name is fuad?")
+ hello:
+<BLANKLINE>
+My name is fuad?
+<BLANKLINE>
+
+>>> text_indentation("?:.??:.?:")
+?
+<BLANKLINE>
+:
+<BLANKLINE>
+.
+<BLANKLINE>
+?
+<BLANKLINE>
+?
+<BLANKLINE>
+:
+<BLANKLINE>
+.
+<BLANKLINE>
+?
+<BLANKLINE>
+:
+<BLANKLINE>
