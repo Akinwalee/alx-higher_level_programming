@@ -1,0 +1,30 @@
+"""This is a test for add_integer function"""
+
+Import the module:
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Then use it a follows:
+
+>>> add_integer(2, 3)
+5   
+
+>>> add_integer(33.55, 6)
+39  
+
+>>> add_integer(33.55, 7.49)
+40  
+
+>>> add_integer("33.55", 7.49)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/vagrant/alx-higher_level_programming/0x07-python-test_driven_development/exam.py", line 4, in add_integer
+    raise TypeError("a must be an integer")
+TypeError: a must be an integer
+
+>>> add_integer(33e444, 7.49)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/vagrant/alx-higher_level_programming/0x07-python-test_driven_development/exam.py", line 8, in add_integer
+    a = int(a)
+OverflowError: cannot convert float infinity to integer
