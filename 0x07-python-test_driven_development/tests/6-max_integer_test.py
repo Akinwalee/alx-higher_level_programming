@@ -5,10 +5,11 @@ import unittest
 
 max_integer = __import__('6-max_integer').max_integer
 
-class TetMaxInteger(unittest.TestCase):
+
+class TestMaxInteger(unittest.TestCase):
 
     def test_max_integer(self):
-        #Test cases
+        # Test cases
         self.assertAlmostEqual(max_integer([1, 2, 3, 4]), 4)
         self.assertAlmostEqual(max_integer([1, 3, 4, 2]), 4)
         self.assertAlmostEqual(max_integer([0, -1, -4, -99, -5]), 0)
