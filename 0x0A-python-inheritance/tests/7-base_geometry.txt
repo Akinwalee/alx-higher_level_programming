@@ -1,0 +1,44 @@
+"""Tests for Integer Validator"""
+___________________________________________________________
+
+
+Import the module as follows:
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Then use the following tests:
+
+>>> bg = BaseGeometry()
+
+>>> bg.integer_validator("my_int", 12)
+
+>>> bg.integer_validator("width", 89)
+
+>>> bg.integer_validator("Invalid Value", 0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/vagrant/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 15, in integer_validator
+    raise ValueError("{} must be greater than 0".format(name))
+ValueError: Invalid Value must be greater than 0
+
+>>> bg.integer_validator("Invalid Value", -1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/vagrant/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 15, in integer_validator
+    raise ValueError("{} must be greater than 0".format(name))
+ValueError: Invalid Value must be greater than 0
+
+>>> bg.integer_validator("Invalid Value", )
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+>>> bg.integer_validator("Invalid Value")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+>>> bg.integer_validator(1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: integer_validator() missing 1 required positional argument: 'value'
