@@ -3,6 +3,7 @@
 version of an inherited list
 """
 
+
 class MyList(list):
     """class the returns a sorted list"""
 
@@ -10,4 +11,5 @@ class MyList(list):
         super().__init__()
 
     def print_sorted(self):
-        print(sorted(self))
+        new_list = sorted(self)
+        print(new_list)
