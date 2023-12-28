@@ -9,4 +9,4 @@ def lookup(obj):
     all attributes of obj
     """
 
-    return(obj.__dir__())
+    return(dir(obj))
