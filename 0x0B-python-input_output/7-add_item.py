@@ -13,7 +13,7 @@ my_list = []
 for i in range(len(sys.argv)):
     if i == 0:
         continue
-    my_list.append(i)
+    my_list.append(sys.argv[i])
 
 save_to_json_file(my_list, "add_item.json")
 load_from_json_file("add_item.json")
