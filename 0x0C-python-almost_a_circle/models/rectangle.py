@@ -9,7 +9,9 @@ class Rectangle(Base):
     """Creates a rectangle class from Base class"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """Constructor for Rectangle class"""
+        """Constructor for Rectangle class
+        width is the width of the triangle
+        height is the height"""
         self.width = width
         self.heigth = height
         self.x = x
