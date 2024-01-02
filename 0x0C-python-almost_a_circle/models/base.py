@@ -3,6 +3,8 @@
 
 
 class Base:
+    """Base class for all classes in this project"""
+
     __nb_objects = 0
 
     def __init__(self, id=None):
