@@ -12,11 +12,11 @@ class Rectangle(Base):
         """Constructor for Rectangle class
         width is the width of the triangle
         height is the height"""
+        super().__init__(id)
         self.width = width
         self.heigth = height
         self.x = x
         self.y = y
-        super().__init__(id)
 
     @property
     def width(self):
