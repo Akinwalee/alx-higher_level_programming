@@ -1,8 +1,7 @@
 #!/usr/bin/node
 
-const arg = process.argv;
-const arr = ['fun', 'cool', 'amazing'];
+const arr = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
-for (let i = 2; i < 5; i++) {
-  console.log(`${arg[i]} is ${arr[i - 2]}`);
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
 }
