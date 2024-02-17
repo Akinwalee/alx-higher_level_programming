@@ -15,6 +15,7 @@ class Square extends Parent {
           process.stdout.write('X');
         }
       }
+      console.log('');
     }
   }
 }
