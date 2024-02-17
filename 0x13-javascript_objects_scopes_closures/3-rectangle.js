@@ -8,9 +8,9 @@ class Rectangle {
     }
     this.print = function (w, h) {
       let i = 0;
-      while (i < h) {
+      while (i < this.height) {
         let j = 0;
-        while (j < w) {
+        while (j < this.width) {
           process.stdout.write('X');
           j++;
         }
