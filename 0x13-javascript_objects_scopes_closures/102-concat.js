@@ -9,12 +9,12 @@ if (process.argv.length === 5) {
     if (err) {
       throw err;
     }
-    fs.writefile(file3, content);
+    fs.writeFile(file3, content);
   });
   fs.readFile(file2, (err, content) => {
     if (err) {
       throw err;
     }
-    fs.writefile(file3, content);
+    fs.writeFile(file3, content);
   });
 }
