@@ -3,7 +3,7 @@
 const dict = require('./101-data').dict;
 const newDict = {};
 
-for (const [key, value] in Object.entries(dict)) {
+for (const [key, value] of Object.entries(dict)) {
   if (newDict[value] !== undefined) {
     newDict[value].push(key);
   } else {
