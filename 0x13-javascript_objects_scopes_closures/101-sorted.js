@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const dict = require('101-data').dict;
+const dict = require('./101-data').dict;
 
 for (let key in dict) {
   const value = dict[key];
