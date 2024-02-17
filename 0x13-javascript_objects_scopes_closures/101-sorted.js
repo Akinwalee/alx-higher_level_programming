@@ -1,11 +1,14 @@
 #!/usr/bin/node
 
 const dict = require('./101-data').dict;
+const newDict = {};
 
-for (let key in dict) {
-  const value = dict[key];
-  dict[key] = key;
-  key = value;
+for (const [key, value] in Object.entries(dict)) {
+  if (Object.hasOwn(newDict, value)) {
+    newDict[value].push(key);
+  } else {
+    newDict[value] = [key];
+  }
 }
 
-console.log(dict);
+console.log(newDict);
