@@ -1,3 +1,3 @@
 #!/bin/bash
 # Show all method of the URL argument
-curl -IX OPTIONS "$1" | grep -i '^allow: ' | cut -d ':' -f 2-
+curl -sI "$1" | grep "Allow" | cut -d " " -f 2-
