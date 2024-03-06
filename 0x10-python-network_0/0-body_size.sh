@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 #Script that sends a request to a server and prints the response lenght in bytes
 
 if [ -z "$1" ]; then
